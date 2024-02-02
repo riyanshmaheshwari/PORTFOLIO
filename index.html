@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <title>Riyansh's Portfolio</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    <!-- <a  href="https://drive.google.com/file/d/1ZSm-lWGKnNHG72OP9HFdGLUWhLokTJOw/view?usp=sharing" download rel="noopener noreferrer" target="_blank">Download NOw</a> -->
+    <!-- Nav Bar Start -->
+    <div><a href="#" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-arrow-up"></i> </a></div>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+    <div class="navbar navbar-expand-lg bg-light navbar-light" id="mynav">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Riyansh Maheshwari</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between nav-sticky" id="navbarCollapse">
+                <div class="navbar-nav ml-auto ">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#projects" class="nav-item nav-link">Projects</a>
+                    <a href="#service" class="nav-item nav-link">My Skills</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav> -->
+    <!-- //////////////////////////////////////////////////////////////// -->
+
+
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-12" style="display: flex; flex-direction: row;">
+                    <div class="hero-content" style=" flex: 10;">
+                        <p class="my-5 px-3" style="font-size: 30px;color: #090322;;">Hey I am Riyansh Maheshwari</p>
+                        <div class="hero-text">
+                            <div class="container py-1" style="height: 250px;">
+                                <div class="output" id="output">
+                                    <h1 class="cursor" style> </h1>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" id="btn2" href="https://www.instagram.com/riyanshmaheshwari/">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-content side-img" style="flex: 6; z-index: -1;">
+                        <img class="vert-move" src="img/vectorProf.svg" alt="Hero Image" style="width: 300px;  
+                            height: auto;  ">
+                    </div>
+                </div>
+                <!-- <div class="col-sm-12 col-md-6 d-none d-md-block">
+                        <div class="hero-image">
+                            <img src="img/hero.png" alt="Hero Image" style="width: 900px;  
+                            height: auto;  ">
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center " style="margin-top: 80px;">
+                <div class="col-lg-6" id="sepia">
+                    <div class="about-img">
+                        <img class="about-image mx-3 vert-move" src="img/about.png" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <p>About Me</p>
+                            <h2>Final Year Under Grad Student </h2>
+                        </div>
+                        <div class="about-text"
+                            style="color: black;background-color: rgba(240, 248, 255, 0.712); padding:12px 12px ;  margin-bottom: 23px;">
+                            <p>
+                                Currently I am pursuing BE (CSE) from Chandigarh University, fueled by a passion for both Machine Learning and Finance. 
+                                While I'm still early in my learning journey, I'm actively diving into the fascinating world of Machine Learning and exploring its potential to revolutionize various aspects of finance. APIs have also piqued my interest, as they represent powerful tools for integrating and interacting with various data sources and services. 
+                                I'm eager to leverage my growing knowledge and skills to explore innovative applications at the intersection of these fields.
+                            </p>
+                        </div>
+
+                        <a class="btn" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Coding Profiles Start -->
+    <!-- <div class="profiles" id="profiles">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Coding Journey</p>
+                <h2>My Coding Profiles</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="profiles-item">
+                        <div class="profiles-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="profiles-text">
+                            <h3>Leetcode</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->`
+    <!-- Coding Profiles End -->
+
+    <!-- Project Profile Starts -->
+
+    <div class="profiles " id="projects">
+
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Real World Experience</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <!-- first project start ###################  -->
+        <div class="column">
+            <div class="section-header text-center " style="margin:0 ; display: flex; flex-direction: row;">
+                <div style="display: flex; width: max-content;margin: auto;">
+                    <div>
+                        <h4 style="flex: 2;text-align: right;">Movie Recommendation System</h4>
+                    </div>
+                    <div style="flex: 1;text-align: left; margin-left: 1rem; font-size:1.4rem;">
+                        <a href="https://github.com/AnuragRoshan/RecomSystem">
+                            <div class="service-icon" style="color: grey;">
+                                <i class="fa fa-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container projectcont vert-move" style="width:50% ; position: relative; margin-bottom: 4rem;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="1500">
+                            <img src="https://user-images.githubusercontent.com/68966298/178826347-b572b3e7-d903-4b08-ac6b-0a5009143ade.JPG"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://user-images.githubusercontent.com/68966298/178826468-28b970b4-1051-4f01-a1b7-57841af3a7b7.JPG"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://user-images.githubusercontent.com/68966298/178826646-38953597-f7ab-47ca-ab57-bc035aea5d27.JPG"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <!-- >>>>>>> parent of 61f399a (Update index.html) -->
+                    </div>
+                    <div class="overlay" style="z-index:1;">
+                        <div class=" text-center px-4 py-4 labelo">
+                            This project is being developed for Microsoft Engage 2022 mentorship program. In this
+                            project I
+                            have used Machine Learning algorithms and various other algorithms to implement movie
+                            recommendation system .
+                        </div>
+                        <div class=" text-center px-4 labelo">
+                            <h5 class="labelo">Tech Stack </h5>
+
+                            <b> Client: </b>React, Redux, Material UI
+                            <br>
+                            <b>Server:</b> Node, Express , Passport JS , Flask , JupyterNotebook
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="overlay" style="z-index:1;">
+                <div class=" text-center px-4 py-4 labelo">
+                    This project is being developed for Microsoft Engage 2022 mentorship program. In this
+                    project I
+                    have used Machine Learning algorithms and various other algorithms to implement movie
+                    recommendation system .
+                </div>
+                <div class=" text-center px-4 labelo">
+                    <h5 class="labelo">Tech Stack </h5>
+
+                    <b> Client: </b>React, Redux, Material UI
+                    <br>
+                    <b>Server:</b> Node, Express , Passport JS , Flask , JupyterNotebook
+
+                </div>
+            </div>
+
+        </div>
+        <!-- first project end ###################  -->
+
+        <!-- second project start############################################# -->
+        <div class="column">
+            <div style="display: flex; width: max-content;margin: auto;">
+                <div>
+                    <h4 style="flex: 2;text-align: right;">Aircraft Sustainability Platform</h4>
+                </div>
+                <div style="flex: 1;text-align: left; margin-left: 1rem; font-size:1.4rem;">
+                    <a href="https://github.com/AnuragRoshan/Aerothon">
+                        <div class="service-icon" style="color: grey;">
+                            <i class="fa fa-link"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="section-header text-center " style="margin:0 ; display: flex; flex-direction: row;">
+
+            </div>
+            <div class="container projectcont" style="width:50% ; position: relative; margin-bottom: 4rem;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="4000">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/landing.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item " data-interval="800">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/SignUp.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/Dash1.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/dash2.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/dash3.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/Aerothon/blob/main/client/public/Diagrams/homepage.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <!-- >>>>>>> parent of 61f399a (Update index.html) -->
+                    </div>
+                    <div class="overlay" style="z-index:1;">
+                        <div class=" text-center px-4 py-4 labelo">
+                            This project is being developed for Aerothon 5.0 Hackathon by AIRBUS. An Aircraft
+                            Sustainability Platform is a web-based solution that connects aircraft manufacturers,
+                            airlines, and recycling facilities to facilitate the repurposing and recycling of
+                            end-of-life aircraft components. The platform aims to promote the circular economy by
+                            reducing waste and promoting sustainability in the aviation industry.
+                        </div>
+                        <div class=" text-center px-4 labelo">
+                            <h5 class="labelo">Tech Stack </h5>
+
+                            <b> Client: </b>React, Redux, Bootstrap , Chart.JS
+                            <br>
+                            <b>Server:</b> Node, Express , Passport JS , Bcrypt , MongoDB
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- second project end #######################  -->
+        <!-- Third project start############################################# -->
+        <div class="column">
+            <div style="display: flex; width: max-content;margin: auto;">
+                <div>
+                    <h4 style="flex: 2;text-align: right;">Library Management System</h4>
+                </div>
+                <div style="flex: 1;text-align: left; margin-left: 1rem; font-size:1.4rem;">
+                    <a href="https://github.com/AnuragRoshan/LibraryManagement">
+                        <div class="service-icon" style="color: grey;">
+                            <i class="fa fa-link"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-header text-center " style="margin:0 ; display: flex; flex-direction: row;">
+
+            </div>
+            <div class="container projectcont" style="width:50% ; position: relative; margin-bottom: 4rem;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/landing.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item " data-interval="2000">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/profileEdit.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/signup.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/home-1.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/cart.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/logins.jpg?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <!-- >>>>>>> parent of 61f399a (Update index.html) -->
+                    </div>
+                    <div class="overlay" style="z-index:1;">
+                        <div class=" text-center px-4 py-4 labelo">
+                            This project is being developed for on campus project round for Devrev .Library Management
+                            using MERN is a full-stack web application that allows users to manage books, borrowers, and
+                            borrowing transactions in a library setting. It utilizes the MERN stack, which includes
+                            MongoDB for the database, Express.js for the server, React.js for the frontend, and Node.js
+                            for the backend. With this application, users can perform operations such as adding new
+                            books, tracking borrowed books, managing borrower details, and generating reports. The
+                            application provides an intuitive and user-friendly interface for efficient library
+                            management.
+                        </div>
+                        <div class=" text-center px-4 labelo">
+                            <h5 class="labelo">Tech Stack </h5>
+
+                            <b> Client: </b>React, Redux, Bootstrap
+                            <br>
+                            <b>Server:</b> Node, Express , Passport JS , Bcrypt , MongoDB
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- Third project end #######################  -->
+        <!-- Third project start############################################# -->
+        <div class="column">
+            <div style="display: flex; width: max-content;margin: auto;">
+                <div style="display: flex; width: max-content;margin: auto;">
+                    <div>
+                        <h4 style="flex: 2;text-align: right;">Teaching And Learning Center College Website</h4>
+                    </div>
+                    <div style="flex: 1;text-align: left; margin-left: 1rem; font-size:1.4rem;">
+                        <a href="tlc-cu.vercel.app/">
+                            <div class="service-icon" style="color: grey;">
+                                <i class="fa fa-link"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-header text-center " style="margin:0 ; display: flex; flex-direction: row;">
+
+            </div>
+            <div class="container projectcont" style="width:50% ; position: relative; margin-bottom: 4rem;">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="1000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="2000">
+                            <img src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/TLC-1.png?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item " data-interval="2000">
+                            <img src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/TLC-2.png?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="1500">
+                            <img src="https://github.com/AnuragRoshan/tlcCu/blob/main/src/Images/TLC-3.png?raw=true"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <!-- >>>>>>> parent of 61f399a (Update index.html) -->
+                    </div>
+                    <div class="overlay" style="z-index:1;">
+                        <div class=" text-center px-4 py-4 labelo">
+                            This frontend specific website is developed for TLC (Teacher Learning Center) of Chandigarh
+                            University. This website is developed using React and Bootstrap. This website is hosted on
+                            Vercel.
+
+                        </div>
+                        <div class=" text-center px-4 labelo">
+                            <h5 class="labelo">Tech Stack </h5>
+
+                            <b> Client: </b>React, Bootstrap
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- Third project end #######################  -->
+        <div class="text-center container" style="font-weight:500 ;font-size:2rem ;">More To Come</div>
+        <div class="stage">
+            <div class="dot-stretching"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Project Profile end -->
+
+
+
+    <!-- Service Start -->
+    <div class="service" id="service">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>What I do</p>
+                <h2>My Skills</h2>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon"><i class="fa-brands fa-python"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-cuttlefish"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>C++</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>JAVA SCRIPT</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+
+
+
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Journey</p>
+                <h2>Experience</h2>
+            </header>
+            <div class="timeline">
+
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">Sept 2020</div>
+                        <h2>Chandigarh University</h2>
+                        <h4>Chandigarh ,India</h4>
+                        <p>
+                            Started Engineering in CSE
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">July 2020</div>
+                        <h2>Delhi Public School</h2>
+                        <h4>Roorkee, India</h4>
+                        <p>
+                            Passed Class 12th
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">July 2019</div>
+                        <h2>International reasoning and aptitude olympiad</h2>
+                        <h4>Roorkee, India</h4>
+                        <p>
+                           Gold Medalist
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">March 2018</div>
+                        <h2>Delhi Public School </h2>
+                        <h4>Roorkee ,India</h4>
+                        <p>
+                            Passed Class 10th
+                        </p>
+                        <!-- Service End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Job Experience End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s" id="contact">
+        <div class="container-fluid bottombar">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Riyansh Maheshwari</h2>
+
+                    <div class="footer-socials">
+                        <a href="tel:+916397975506"><i class="fas fa-phone fab"></i></a>
+                        <a href="mailto:riyanssh2000@gmail.com"> <i class="far fa-envelope-open "></i></a>
+                    </div>
+                    <div class="footer-social ">
+                        <a href="https://twitter.com/riyanssh2002"><i class="fab fa-twitter"></i></a>
+
+                        <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/riyansh-maheshwari/"><i
+                                class="fab fa-linkedin-in"></i></a>
+
+                        <a href="https://github.com/riyanshmaheshwari"><i class="fab fa-github"></i></a>
+
+                        <a href="https://www.instagram.com/riyanshmaheshwari/"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Pre Loader
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div> -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/goToTopBtn.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/codingProfile.js"></script>
+
+
+</body>
+
+</html>
